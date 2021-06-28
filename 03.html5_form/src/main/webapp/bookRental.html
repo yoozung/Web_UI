@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>bookRental</title>
+</head>
+<body>
+
+<h3>도서 대여 예약 시스템</h3>
+<hr>
+<form>
+	<fieldset>
+	<legend>회원정보</legend>
+		<input 
+		type="text" name="memberId"
+		required="required"
+		autofocus="autofocus"
+		placeholder="영문대소문자숫자조합, 최소6자리, 최대30자리"
+		pattern="[A-Za-z0-9]{6,30}"
+		>
+		<input 
+		type="text" name="mobile"
+		required="required"
+		autofocus="autofocus"
+		placeholder="010-0000-0000"
+		pattern="(010)-\d{4}-\d{4}"
+		>
+		<input 
+		type="email" name="email"
+		required="required"
+		autofocus="autofocus"
+		placeholder="000@0000.000"
+		pattern="[A-Za-z0-9@]"
+		>
+</fieldset>
+
+	<fieldset>
+	<legend>도서정보</legend>
+		<input 
+		type="text" name="bookName"
+		required="required"
+		autofocus="autofocus"
+		>
+		<input 
+		type="number" 
+		name="reserveNo"
+		required="required"
+		autofocus="autofocus"
+		min="1" max="5"
+		>
+		<input 
+		type="date" 
+		name="date"
+		required="required"
+		autofocus="autofocus"
+		id="theDate"
+		>
+		<input 
+		type="time" 
+		name="time"
+		required="required"
+		autofocus="autofocus"
+		min="09" max="17"
+		>
+	</fieldset>
+	
+	<fieldset>
+	<legend>예약신청</legend>
+	<input type="submit" value="신청">
+	</fieldset>
+</form>
+
+</body>
+</html>

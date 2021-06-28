@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 FORM 예제</title>
+</head>
+<body>
+
+<h2>[ 회원가입 ] HTML5 FORM</h2>
+<table border="1" cellspacing="3px" cellpadding="3px" bgcolor="E4EFE7">
+<form action="result.html" method="post">
+	
+	<tr>
+		<!-- 아이디 규칙 : 영문대소문자숫자조합+특수문자@ 최소 6자리 최대30자리 -->
+		<td>아이디</td>
+		<td>
+		<input type="text" name="memberId" 
+			autofocus="autofocus"
+			required="required"
+			size="28"
+			placeholder="영문숫자 조합 30자리"
+			pattern="[A-Za-z0-9@]{6,10}">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>비밀번호 </td>
+		<td>
+		<input type="password" name="memberPw" 
+		required="required"
+		placeholder="영문특수문자숫자 조합 20자리"
+		style="width:200px;">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>비밀번호 확인 </td>
+		<td>
+		<input type="password" name="memberPwConfirm" required="required" size="28">
+		<input type="checkbox" name="isVisalblePassword">비밀번호 보이기</td>
+	</tr>
+	
+	
+	<tr>
+		<td>이름 </td>
+		<td>
+		<input type="text" name="name" 
+		required="required"
+		size="28">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>휴대폰 </td>
+		<td>
+		<input type="mobile" name="mobile" 
+		size="28"
+		required="required"
+		placeholder="숫자만 입력하세요(01012341234)">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>이메일 </td>
+		<td><input type="text" name="email" required="required" size="28">
+		<input type="text" name="email"><select name="selectemail">
+			<option >직접입력</option>
+			<option value="naver">@naver.com</option>
+			<option >@gmail.com</option>
+			<option >@hanmail.net</option></td>
+	</tr>
+	
+	<!--  테스트 -->
+	<tr>
+		<td>테스트 : 날짜</td>
+		<td>
+		<input 
+		placeholder="날짜" 
+		type="date" 
+		name="mobile" 
+		size="28"
+		required="required"
+		value="2021-05-17"
+		>
+		</td>
+	</tr>
+	
+	
+	<!--  테스트 -->
+	<tr>
+		<td>테스트 : 숫자</td>
+		<td>
+		<input 
+		placeholder="숫자" 
+		type="number" 
+		name="test2" 
+		size="28"
+		required="required"
+		min="2" max="10" step="2" value="2" 
+		>
+		</td>
+	</tr>
+	
+	<!--  테스트 -->
+	<tr>
+		<td>테스트 : 단일파일</td>
+		<td>
+		<input 
+		placeholder="파일" 
+		type="file" 
+		name="test3" 
+		size="28"
+		>
+		</td>
+	</tr>
+	
+	<!--  테스트 -->
+	<tr>
+		<td>테스트 : 다중파일</td>
+		<td>
+		<input 
+		placeholder="파일" 
+		type="file" 
+		name="test3" 
+		size="28"
+		multiple="multiple"
+		>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>테스트 : 전화번호</td>
+		<td>
+		<input 
+		placeholder="010-1234-1234" 
+		type="mobile" 
+		name="mobile" 
+		size="28"
+		pattern="(010|02|031|051)-\d{3,4}-\d{4}">
+		</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="가입">
+			<input type="reset" value="취소">
+		</td>
+	</tr>
+	
+</form>
+</table>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- 문서타입 선언문 : html4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--  root tag -->
+<html lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>비밀번호 찾기 | MMS</title>
+	</head>
+	
+	<!-- 브라우저에 서비스(보여지는) 내용 -->
+<body>
+<!--  이미지 로고 -->
+<a href="index.html"><img src="img/home.png"></a>
+<h3>회원관리시스템</h3>
+<hr>
+<a href="login.html">로그인</a>|
+<a href="joinMember.html">회원가입</a>|
+<a href="findMember.html">아이디/비밀번호찾기</a>
+<hr>
+<h2>[비밀번호 찾기]</h2>
+<table border="1" cellspacing="3px" cellpadding="3px" bgcolor="E4EFE7">
+<form action="result.html" method="post">
+	<tr>
+		<td>아이디</td>
+		<td><input type="text" name="memberId"></td>
+	</tr>
+
+	<tr>
+		<td>이름</td>
+		<td><input type="text" name="name"></td>
+	</tr>
+	
+	<tr>
+		<td>휴대폰 </td>
+		<td><input type="text" name="mobile"></td>
+	</tr>
+	
+	<tr>
+		<td>이메일</td>
+		<td><input type="text" name="email">
+		<input type="text" name="email"><select name="selectemail">
+			<option>직접 입력</option>
+			<option value="naver">@naver.com</option>
+			<option value="gmail">@gmail.com</option>
+		</select></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="입력">
+			<input type="reset" value="취소">
+		</td>
+	</tr>
+	
+</form>
+</table>
+</body>
+</html>

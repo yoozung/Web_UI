@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지뷰</title>
+<style type="text/css">
+
+	/* 이미지 확장자가 .jpg일때 조건반영하도록 처리 */
+	img[src$=".jpg"] {
+		width: 250px;
+		height: 380px;
+	}
+	
+	/*이미지에 마우스가 왔을 때 처리 */
+	img:hover {
+		
+   		 transform:scale(1.5);
+    	transition: transform.3s;
+	}
+
+	
+</style>
+</head>
+<body>
+<h3><img src="img/sn.logo.png"></h3>
+<div class="img">
+	<img src="img/sn.01.jpg">
+	<img src="img/sn.02.jpg">
+	<img src="img/sn.03.jpg">
+	<img src="img/sn.04.jpg">
+	<img src="img/sn.05.jpg">
+	<img src="img/sn.06.jpg">
+	<img src="img/sn.07.jpg">
+	<img src="img/sn.08.jpg">
+	<img src="img/sn.09.jpg">
+	<img src="img/sn.10.jpg">
+</div>
+
+</body>
+</html>

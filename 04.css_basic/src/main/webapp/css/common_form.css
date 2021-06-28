@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* form 양식 css : css/common_form.css */
+
+input.btn_submit {
+	background-color: #ffffff;
+	color: #400080;
+}
+
+input.normal {
+	width: 140px;
+	height: 25px; 
+	border-radius: 115px;
+	margin-top: 30px;
+	
+}
+
+
+/* 입력항목에 포커스가 올 때 배경색 변경 */
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+	background-color: #c5edc0;
+	border-color: red;
+	border-style: dotted;
+}
+
+/* 테이블 없이 form 사용하기 */
+span.input_lable {
+	display: inline-block;
+	width: 100px;
+	padding-left: 550px;
+}
+
+span.seperator {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+img[src$="img/toteme.png"] {
+		width: 120px;
+		height: 120px;
+	}
+	
+input.seperator {
+	padding: 5px;
+}
