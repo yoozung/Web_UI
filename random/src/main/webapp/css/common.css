@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 랜덤인원뽑기 */
+.title {
+	margin: 1rem 0 7rem 0;
+	font-size: 60px;
+}
+
+/*전문가과정 인원*/
+.semititle {
+	font-size: 30px;
+}
+
+/* 참여인원을 선택해주세요. */
+span.selectment {
+	font-size: 1.3rem;
+}
+
+/* 전체선택 */
+input.normal {
+	width: 100px;
+	height: 25px; 
+	margin-top: 10px;
+	background-color: #e3e3e3;
+	border-width: thin;
+}
+
+/* 명단 */
+span.list {
+	font-size: 1.3rem;
+}
+
+/* 뽑기 */
+input.choose {
+	width: 50px;
+	height: 25px; 
+	margin-top: 10px;
+	margin-left: 6px;
+	background-color: #e3e3e3;
+	border-width: thin;
+}
+
+
+
+
+
+
+

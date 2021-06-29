@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>랜덤인원뽑기</title>
+
+<!-- css : external -->
+<link rel="stylesheet" href="css/common.css">
+
+<!-- js : external -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/common.js"></script>
+
+</head>
+
+<body>
+<h1 align="center" class="title">랜덤인원뽑기</h1>
+<h3 align="center" class="semititle">전문가과정 인원</h3>
+<form>
+	<div align="center">
+		<span class="selectment">참여인원을 선택해주세요.</span>
+		<input type="button" value="전체선택" class="normal" id="on">
+		<input type="button" value="전체선택 취소" class="normal" id="off">
+	</div>
+	<p>
+	<div align="center">
+		<span class="list">
+		<input type="checkbox" name="name" value="한소희">한소희
+		<input type="checkbox" name="name" value="송강호">송강호
+		<input type="checkbox" name="name" value="신하균">신하균
+		<input type="checkbox" name="name" value="이상학">이상학
+		<input type="checkbox" name="name" value="정유엽">정유엽
+		<input type="checkbox" name="name" value="김정훈">김정훈
+		<input type="checkbox" name="name" value="신동엽">신동엽
+		</span>
+	</div>
+	
+	<div align="center">
+		<span class="list">
+		<input type="checkbox" name="name" value="정한해">정한해
+		<input type="checkbox" name="name" value="김기범">김기범
+		<input type="checkbox" name="name" value="김동현">김동현
+		<input type="checkbox" name="name" value="문세윤">문세윤
+		<input type="checkbox" name="name" value="김태연">김태연
+		<input type="checkbox" name="name" value="이보영">이보영
+		<input type="checkbox" name="name" value="정서현">정서현
+		</span>
+	</div>
+	<p>
+	<div align="center">
+		<select name="num">
+			<option >--뽑기인원--</option>
+			<script type="text/javascript">
+				for(var i=1; i<=14; i++){
+					document.write('<option value="'+i+'">'+i+'</option>');
+				}
+			</script>
+		<input type="submit" value="뽑기" class="choose">	
+	</div>
+	
+</form>
+</body>
+</html>

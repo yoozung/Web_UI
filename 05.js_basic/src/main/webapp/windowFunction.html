@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Window 내장함수</title>
+<!-- js : internal -->
+<script type="text/javascript">
+	/* 주문처리 : 사용자 주문수량 입력받아서 주문내역 출력 
+		상품 가격 : 10,000
+		주문 수량 : 1 ~ 10개 제한 
+		
+		# 사용함수 
+		-- 변수 선언, 주문수량 입력, 주문수량 데이터 검증, 숫자여부 검증, 동적화면출력제어 
+		-- prompt() 데이터입력받는거
+		-- isNaN() 숫자맞는지 확인
+		-- parseInt() 숫자변환
+		-- alert() 경고창띄우기 (주문진짜할거야?)
+		-- confirm() 이거주문하는거 맞아? 확인시키기
+				
+		# 체킹사항
+		-- 주문수량 데이터 검증
+		1. 입력여부
+		2. 숫자데이터여부
+		3. 데이터 범위 : 1 ~ 10 => 숫자데이터 형변환 
+		4. 주문내역 보여주기
+		5. 최종 주문여부 확인
+		6. 주문처리
+		7. 주문취소처리
+	*/
+	
+	/* 상품 가격 */
+	var price = 10000;
+		
+	/* 주문수량 입력받기*/	
+	var quantity = prompt("주문수량 입력하세요.", "");  // 인터넷익스플로러는 기본입력창이 빈창이 아니라서 두번째아규먼트에 공백문자 넣어주면 입력창 깔끔
+	console.log("주문수량 : " + quantity);
+	console.log("데이터타입 : " + typeof quantity);
+	
+	
+	if (quantity != "") {
+		if (isNaN(quantity)) {
+			alert("[오류] 주문수량은 숫자로 입력해주세요")
+		} else {
+			quantity = parseInt(quantity);
+			if (quantity < 1 || quantity > 10) {
+				alert("[오류] 주문수량은 1 ~ 10 범위로 입력해주세요")
+			}
+			
+			var orderPrice = price * parseInt(quantity);
+			console.log("orderPrice : " + orderPrice);
+			
+			//var message; 					    // 변수만 선언하면 undefined 
+			var message = ""; 					// 해결 => 공백문자열 초기화 처리
+			message += "주문내역정보";				// undefined주문내역정보 문제 발생 --> 
+			message += ("\n상품가격 : " + price);
+			message += ("\n주문수량 : " + quantity);
+			message += ("\n주문총액 : " + orderPrice);
+			message += ("\n-------------------------");
+			message += ("\n주문하시겠습니까?");
+			
+			var isOrder = confirm(message);
+			if (isOrder) {
+				document.write("[주문이 완료되었습니다.]")
+			} else {
+				document.write("[주문이 취소되었습니다.]")
+			}
+		}
+	} else {
+		alert("[오류] 주문수량을 입력해주세요")
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+<h3>Window 내장함수</h3>
+
+
+
+
+
+</body>
+</html>
