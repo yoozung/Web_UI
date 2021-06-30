@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* form 양식 css : css/common_form.css // 클래스는 . 아이디는 #  */
+
+
+/* 테이블 없이 form 사용하기 */
+span.input_lable {
+	padding-left: 50px;
+}
+
+#by {
+	font-weight: 5px;
+	font-size: 20px;
+}
+
+
+
+#guide {
+	font-size: 14px;
+}
+
+#form {
+	margin-left: 400px;
+	margin-top: 20px;
+	margin-top: 20px;
+}
+
+
+
+#selectemobile {
+	margin-top: 10px;
+}
+
+#name {
+	width: 250px;
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+select {
+	margin-left: 8px;
+	margin-top: 8px;
+    width: 77px;
+    height: 25px;
+    border-radius: 0px;
+    
+}
+
+#num {
+	margin-left: 8px;
+	margin-top: 8px;
+    width: 77px;
+    height: 22px;
+    border-radius: 0px;
+}
+
+
+
